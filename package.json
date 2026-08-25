@@ -7,13 +7,13 @@
     "group": "engine"
   },
   "description": "Effect wrapper for RFC 8785 JSON canonicalization",
-  "homepage": "https://github.com/smithersai/canonical#readme",
+  "homepage": "https://github.com/smithersai/effect-cannonical#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/smithersai/canonical.git"
+    "url": "git+https://github.com/smithersai/effect-cannonical.git"
   },
   "bugs": {
-    "url": "https://github.com/smithersai/canonical/issues"
+    "url": "https://github.com/smithersai/effect-cannonical/issues"
   },
   "packageManager": "pnpm@11.21.0",
   "engines": {
