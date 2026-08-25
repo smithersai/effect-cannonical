@@ -7,12 +7,15 @@
     "group": "engine"
   },
   "description": "Effect wrapper for RFC 8785 JSON canonicalization",
-  "homepage": "https://github.com/smithersai/flows",
+  "homepage": "https://github.com/smithersai/canonical#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/smithersai/flows.git",
-    "directory": "packages/canonical"
+    "url": "git+https://github.com/smithersai/canonical.git"
   },
+  "bugs": {
+    "url": "https://github.com/smithersai/canonical/issues"
+  },
+  "packageManager": "pnpm@11.21.0",
   "engines": {
     "node": ">=22.19.0"
   },
@@ -52,7 +55,8 @@
     "check": "tsc -b tsconfig.json && tsc -p tsconfig.test.json --noEmit",
     "circular": "node scripts/circular.mjs",
     "test": "vitest",
-    "coverage": "vitest --coverage"
+    "coverage": "vitest --coverage",
+    "verify": "pnpm run lint && pnpm run check && pnpm exec vitest --run && pnpm run build"
   },
   "dependencies": {
     "effect": "4.0.0-rc.108"
@@ -62,6 +66,7 @@
     "@effect/vitest": "4.0.0-rc.108",
     "@eslint/js": "9.39.1",
     "@types/node": "25.9.5",
+    "@vitest/coverage-v8": "4.1.9",
     "dprint": "0.55.2",
     "esbuild": "0.28.1",
     "eslint": "9.39.1",

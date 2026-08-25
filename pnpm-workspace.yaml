@@ -1,0 +1,8 @@
+packages:
+  - "."
+
+allowBuilds:
+  dprint: false
+  esbuild: false
+
+verifyDepsBeforeRun: false

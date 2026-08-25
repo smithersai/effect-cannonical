@@ -6,6 +6,9 @@ Two objects with the same entries in different key order — `{ a: 1, b: 2 }` an
 
 This package wraps [`canonicalize`](https://www.npmjs.com/package/canonicalize) in Effect, following the [RFC 8785 JSON Canonicalization Scheme](https://www.rfc-editor.org/rfc/rfc8785.html).
 
+It is developed and released independently from Smithers Flows. Install it
+directly with `pnpm add @smthrs/canonical effect@4.0.0-rc.108`.
+
 ```typescript
 import { Canonical } from "@smthrs/canonical"
 import { Schema } from "effect"
@@ -13,3 +16,14 @@ import { Schema } from "effect"
 const document = Schema.decodeUnknownSync(Canonical)({ b: 2, a: 1 })
 // '{"a":1,"b":2}'
 ```
+
+## Development
+
+```sh
+pnpm install --frozen-lockfile
+pnpm run verify
+```
+
+`verify` runs formatting and lint checks, TypeScript checks, the Vitest suite,
+and the ESM/CJS build. npm publishing is intentionally not part of this
+repository's CI.
