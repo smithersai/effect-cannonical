@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/index.ts"],
+  "sourcesContent": ["// Deep reviewed and polished by a human on 2026-08-10.\n\n/**\n * RFC 8785 canonical JSON, the serialization every digest in `flows` is taken\n * over.\n *\n * ```ts\n * import { Canonical } from \"@smthrs/canonical\"\n * import * as Schema from \"effect/Schema\"\n *\n * const document = Schema.decodeUnknownSync(Canonical)({ b: 1, a: 2 })\n * // => `{\"a\":2,\"b\":1}`\n * ```\n *\n * @since 0.1.0\n */\n\n/**\n * @category schemas\n * @since 0.1.0\n * @slop\n */\nexport * from \"./Canonical.ts\"\n"],
+  "mappings": ";;;;;;;;;;;;;;;AAAA;AAAA;AAsBA,0BAAc,2BAtBd;",
+  "names": []
+}

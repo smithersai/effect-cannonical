@@ -25,5 +25,6 @@ pnpm run verify
 ```
 
 `verify` runs formatting and lint checks, TypeScript checks, the Vitest suite,
-and the ESM/CJS build. npm publishing is intentionally not part of this
-repository's CI.
+and the ESM/CJS build. Built ESM, CommonJS, and declaration files are committed
+so a SHA-pinned GitHub tarball is directly installable without lifecycle
+scripts. npm publishing is intentionally not part of this repository's CI.
